@@ -1,13 +1,37 @@
 spring:
   profiles:
-    active: 
+    active: dev
   application:
     name: okta-demo-app
-  cloud:
-    config:
-      uri: http://localhost:8888
-      label: master
-      
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+#      label: master
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: admin
+      username: root
+      password: example
+  rabbitmq:
+    virtualHost: default_vhost
+    host: localhost
+    port: 5672
+    password: password
+    username: admin
+
+queue:
+  name: messagequeue
+fanout:
+  exchange: messagequeue-exchange
+
+okta:
+  oauth2:
+    issuer: https://dev-611140.okta.com/oauth2/aus4z02q32s6yHv5Z357
+    client-id: 0oa7gi8ksxKxmadbF357
+    client-secret: w4QOiPaxh04nYlUAlOchJmPPbrjC9gn0JZRz9zSf
+
 logging:
   level:
     root: INFO
