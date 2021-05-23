@@ -125,7 +125,7 @@
                 <groupId>com.dkanejs.maven.plugins</groupId>
                 <artifactId>docker-compose-maven-plugin</artifactId>
                 <version>4.0.0</version>
-                <executions>
+                <!-- <executions> -->
                     <!-- <execution>
                         <id>pull</id>
                         <phase>compile</phase>
@@ -158,8 +158,8 @@
                             <composeFile>${project.basedir}/src/main/docker/docker-compose.yml</composeFile>
                             <removeVolumes>true</removeVolumes>
                         </configuration>
-                    </execution>
-                </executions> -->
+                    </execution>  -->
+                <!-- </executions> -->
             </plugin>
         </plugins>
     </build>
