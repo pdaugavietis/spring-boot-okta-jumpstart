@@ -137,7 +137,7 @@
                             <ignorePullFailures>true</ignorePullFailures>
                         </configuration>
                     </execution> -->
-                    <execution>
+                    <!-- <execution>
                         <id>up</id>
                         <phase>compile</phase>
                         <goals>
@@ -159,7 +159,7 @@
                             <removeVolumes>true</removeVolumes>
                         </configuration>
                     </execution>
-                </executions>
+                </executions> -->
             </plugin>
         </plugins>
     </build>
